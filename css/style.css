@@ -3,6 +3,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.main-container{
+
+    max-width: 1670px;
+
+    margin: auto;
+ 
+}
+
 /****** Header ***********/
 .container{
     display: flex;
@@ -35,13 +43,15 @@
 }
 .box{
     display: flex;
-   
+    flex-wrap: wrap;
     background-color: rgb(61, 59, 59);
     color: bisque;
     padding: 7px;
     border-radius: 10px;
 }
-
+.neutral-star {
+    color:  rgb(61, 59, 59);
+}
 
 
 /****** Slogan ***********/
@@ -90,8 +100,61 @@
 }
 
 /****** slogan 2 ***********/
+
+
+.info{
+    width: 20px;
+    height: 30px;
+}
 /****** results ***********/
+
+.title{
+    flex-direction: column;
+}
+
+.boxheb{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(61, 59, 59);
+    color: bisque;
+    padding: 7px;
+    border-radius: 10px;
+    gap: 1em;
+    max-width: 1050px;
+    justify-content: space-between;
+}
+
+.imgheb{
+    width: 325px;
+    height: 115px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+
+}
+
+
+
+
 /****** popular ***********/
+
+
+.imgpop{
+
+    width: 33%;
+    height: 136px;
+    border-radius: 20px 0px 0px 20px;
+
+    object-fit: cover;
+
+}
+
+
+.pop{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
 /****** activities ***********/
 /****** Footer ***********/
 
@@ -104,9 +167,11 @@
 /****** Adaptive ***********/
 
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1670px) {
 
-
+.priotity{
+    order: -1;
+}
 
 /****** Slogan ***********/
 /****** search ***********/
