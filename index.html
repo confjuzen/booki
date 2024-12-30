@@ -18,20 +18,42 @@
 <body class="main-container">
     <div>
         <header>
-        <div class="header container">
+            <div class="header container">
 
-            <div class="logo box">
-                <img src="images/logo/Booki@3x.png" alt="logo" herf="https://www.youtube.com/" class="logo">
-            </div>
+                <div class="logo box">
+                    <img src="images/logo/Booki@3x.png" alt="logo" class="logo">
+                </div>
 
-            <div class="spacer box"></div>
+                <div class="spacer box"></div>
 
-            <div class="headerbuttons box">
-                <a herf="/index.html">Hébergements</a></div>
-            <div class="headerbuttons box">
-                <a herf="/index.html">Activités</a>
-            </div>
+                <div class="headerbuttons box">
+                    <a href="#hebergements">Hébergements</a></div>
+                <div class="headerbuttons box">
+                    <a href="#activites">Activités</a>
+                </div>
         
+            </div>
+            <div class="header2">
+
+                <div class="logo box logo2">
+                    <img src="images/logo/Booki@3x.png" alt="logo" class="logo">
+                </div>
+
+                <div class ="submenu">
+                    <div class="headerbuttons box2">
+                        <a href="#hebergements">Hébergements</a></div>
+                    <div class="headerbuttons box2">
+                        <a href="#activites">Activités</a>
+                </div>
+        
+            </div>
+
+
+
+
+
+
+
         </header>
 
         <div class="slogan container">
@@ -40,11 +62,12 @@
         </div>
 
         <div class="container">
-            <div class="box">
+            <div class="box textallign">
                 <img src="images/icons/pin.png" class="pin">
-                <form action="" method="get">
-                <input type="text" name="name" id="name" value="Marseille, France">
+                <form action="" method="get" class="textallign">
+                <input type="text" name="name" id="name" value="Marseille, France" class="textinput">
                 <button id="btn" type="submit" class="rechercher">Rechercher</button>
+                <button id="btn" type="submit" class="rechercherbtn"><img src="images/icons/Button.png" id="btn" type="submit" class="rechercherbtnimg"></button>
                 </form>
             </div>
         </div>    
@@ -53,24 +76,26 @@
             <div class="box filtresh3">
                 <h3>Filtres</h3>
             </div>
-            <div class="filtresbtn"><h4>Économique</h4></div>
-            <div class="filtresbtn"><h4>Familial</h4></div>
-            <div class="filtresbtn"><h4>Romantique</h4></div>
-            <div class="filtresbtn"><h4>Nos pépites</h4></div>
+            <div class="filtresbtnbox">
+                <div class="filtresbtn"><img src="images/icons/money.png" class="btnsize"><h4>Économique</h4></div>
+                <div class="filtresbtn"><img src="images/icons/man.png" class="btnsize"><h4>Familial</h4></div>
+                <div class="filtresbtn"><img src="images/icons/hart.png" class="btnsize"><h4>Romantique</h4></div>
+                <div class="filtresbtn"><img src="images/icons/fire.png" class="btnsize"><h4>Nos pépites</h4></div>
+            </div>
         </div>   
 
-        <div class="slogan2 container">
-            <img src="images/icons/fa-info.png" class="info box">
+        <div class="slogan2">
+            <img src="images/icons/info.png" class="info box">
             <div class="box"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
         </div>
 
         
-        <div class="hebpop container">
+        <div class="hebpop ">
         
         <div class="container">
-            <div class="box title"><h2>Hébergements à Marseille</h2></br>
+            <div class="box title"><h2 id="hebergements">Hébergements à Marseille</h2></br>
             <div class="boxheb">
-                <div>
+                <div class="boxhover">
                     <img src="images/hebergements/fred-kleber.jpg" class="imgheb"></br>
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 53€</p>
@@ -83,7 +108,7 @@
                     </div>
                 </div>
             
-                <div>
+                <div class="boxhover">
                     <img src="images/hebergements/fred-kleber.jpg" class="imgheb"></br>
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 53€</p>
@@ -96,7 +121,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="boxhover">
                     <img src="images/hebergements/fred-kleber.jpg" class="imgheb"></br>
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 53€</p>
@@ -109,7 +134,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="boxhover">
                     <img src="images/hebergements/fred-kleber.jpg" class="imgheb"></br>
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 53€</p>
@@ -122,7 +147,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="boxhover">
                     <img src="images/hebergements/fred-kleber.jpg" class="imgheb"></br>
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 53€</p>
@@ -135,7 +160,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="boxhover">
                     <img src="images/hebergements/fred-kleber.jpg" class="imgheb"></br>
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 53€</p>
@@ -152,8 +177,8 @@
         </div>    
         
         <div class="container priotity">
-            <div class="box title"><h2>Hébergements à Marseille</h2></br>
-            <div class="boxheb">
+            <div class="box title"><h2>Les plus populaires</h2></br>
+            <div class="boxpop">
                 
                     <div class="pop">
                         <img src="images/hebergements/fred-kleber.jpg" class="imgpop">
@@ -171,10 +196,120 @@
                     
                         </div>
                     </div>    
+
+                    <div class="pop">
+                        <img src="images/hebergements/fred-kleber.jpg" class="imgpop">
+                        <div>
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 53€</p>
+                            <div class="stars">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                        
+                            </div>
+                    
+                        </div>
+                    </div>    
+
+                    <div class="pop">
+                        <img src="images/hebergements/fred-kleber.jpg" class="imgpop">
+                        <div>
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 53€</p>
+                            <div class="stars">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                        
+                            </div>
+                    
+                        </div>
+                    </div>   
                 </div>
                 </div>
-        </div>        
-    </div> 
+        </div>     
+        </div> 
+
+
+         
+
+                <div class="container">
+            <div class="box title"><h2 id="activites">Activités à Marseille</h2></br>
+            <div class="boxactiv">
+                <div class="activ">
+                    <img src="images/activites/reno-laithienne.jpg" class="imgactiv">
+                    <h3>Activité 1</h3>
+                </div>    
+                <div class="activ">
+                    <img src="images/activites/reno-laithienne.jpg" class="imgactiv">
+                    <h3>Activité 2</h3>
+                </div>
+                <div class="activ">
+                    <img src="images/activites/reno-laithienne.jpg" class="imgactiv">
+                    <h3>Activité 3</h3>
+                
+                </div>    
+                <div class="activ">
+                    <img src="images/activites/reno-laithienne.jpg" class="imgactiv">
+                    <h3>Activité 3</h3>
+                
+                </div>  
+            </div>
+
+            </div>
+        </div>  
+  
+        <footer>
+           
+                <div class="container footer">
+                    <div class="footerobj">
+                        <h3>À propos</h3>
+                        <a>Fonctionnement du site</a><br>
+                        <a>Conditions générales</a><br>
+                        <a>Données et confidentialité</a>
+                    </div>    
+                    <div class="footerobj">
+                        <h3>Nos hébergements</h3>
+                        <a>Charte qualité</a><br>
+                        <a>Proposer votre hôtel</a>
+                    </div>
+                    <div class="footerobj">
+                        <h3>Assistance</h3>
+                        <a>Centre d’aide</a><br>
+                        <a>Nous contacte</a>
+                    </div>    
+                </div>
+    
+
+
+
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>   
 </body>
 
