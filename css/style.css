@@ -25,7 +25,8 @@ h1{
 }
 h2{
     margin: 0px;
-    font-size: 1.17em;
+    font-size: 1.2em;
+    font-weight: bolder;
 }
 h3{
     margin: 0px;
@@ -56,6 +57,9 @@ ul{
 }
 .grow{
     flex-grow: 1;
+}
+.column{
+    flex-direction: column;
 }
 /****** NavBar ***********/
 .navbar{
@@ -269,6 +273,8 @@ ul{
 }
 .textactiv{
     padding: 20px;
+    align-content: center;
+    height: 80px;
 }
 .boxhover{
     width: 30%;
@@ -284,6 +290,9 @@ ul{
     gap: 15%;
     background-color: #DEEBFF;
 }
+.footertext{
+    padding: 8px;
+}
 /*********** Adaptive ***************** 1400px */
 @media (max-width: 1400px) {
     .imgactiv{
@@ -295,7 +304,7 @@ ul{
     }
    .hebpop{
     flex-direction: column;
-   }
+    }
     .boxheb{
         max-width: 100%;    
     }
@@ -354,13 +363,12 @@ ul{
         order: -1;
     }
     .textinput{
-        transform: translateY(-27px)translateX(0px);
+        transform: translateY(-27px) translateX(0px);
         height: 50px;
         padding-left: 20px;
         padding-right: 20px;
-        width: 300px;  
-        }
-
+        width: 200px;  
+    }
     .pin{
         transform: translateY(0px) translateX(8px);
     }
@@ -392,26 +400,40 @@ ul{
     .logo{
         transform: translateX(-10px);
     }
+    .rechercherbtn{
+        transform: translateX(15px)translateY(0px);
+    }
 }
 /*********** Adaptive ***** small phone ****** remove all borders ****** 500px */
 @media (max-width: 500px) {
-    .textinput{
-        transform: translateY(-27px)translateX(-20px);
-        height: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 230px;
-        }
-    .part1{
-        flex-direction: column;
-        align-items: flex-start;
+    .boxpop{
+        border-radius: 0px;
+    }
+    .hebpop{
+        padding: 0px;
+    }
+    .boxheb{
+        background-color: #ffffff00;    
     }
     .main-container{
         padding: 0px;
     }
     .textinput{
-        width: 165px;  
         padding-left: 10px;
         padding-right: 10px;
-        }
+        transform: translateY(-27px) translateX(-5px);
+    }
+    .filters-types {
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+}
+@media (max-width: 420px) {
+    .textinput{
+        width: 165px;
+    }
+    .part1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
