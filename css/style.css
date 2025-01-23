@@ -138,7 +138,7 @@ ul{
 .rechercherbtn{
     display: none;
 }
-.rechercherbtnimg{
+.recherbtnimg{
     display: none;
 }
 /****** filter ***********/
@@ -253,7 +253,9 @@ ul{
 }
 .imgpop{
     border-radius: 20px 0px 0px 20px;
-    max-width: 30%;
+    width: 30%;
+    height: 118px;
+
     object-fit: cover;
 }
 .textpop{
@@ -307,8 +309,8 @@ ul{
 .footertext{
     padding: 8px;
 }
-/*********** Adaptive ***************** 1400px */
-@media (max-width: 1400px) {
+/*********** Adaptive *****************    tablet     1400px */
+@media (max-width: 1024px) {
     .imgactiv{
         height: 200px;
     }
@@ -324,19 +326,18 @@ ul{
     }
     .boxpop{
         max-width: 100%;    
-        flex-direction: column;
     }
     .cardspop{
         flex-direction: row;
     }
-    .a-pop{
+   /* .a-pop{
         height: auto;
-    }
-    .cardsheb div{
+    }*/
+    /*.cardsheb div{
         flex: 1 1 calc(33.333% - 20px); 
-    }
+    }*/
 }
-/*********** Adaptive ***************** 850px */
+/*********** Adaptive ***************** 850px 
 @media (max-width: 850px) {
     .imgactiv{
         height: 150px;
@@ -359,9 +360,9 @@ ul{
         flex-direction: column;
         gap: 20px;
     }
-}
+}*/
 /*** Adaptive *** change navbar, search and filter buttons *** mobile mode *** 820px ***/
-@media (max-width: 820px) {
+@media (max-width: 768px) {
     .filters-list {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -403,7 +404,7 @@ ul{
         background-color: #0065fc00;
         border: none;
     }
-    .rechercherbtnimg{
+    .recherbtnimg{
         display: initial;
     }
     header{
