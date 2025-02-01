@@ -23,7 +23,7 @@ h2{
 }
 h3{
     margin: 0px;
-    font-size: 1.1em; 
+    font-size: 1em; 
 }
 p{
     font-size: 1em;
@@ -150,24 +150,23 @@ ul{
 /****** filter ***********/
 .filters {
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 .filters-list {
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 .part1{
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 .filters-types {
     align-items: center;
     border: 2px solid #d9d9d9;
     border-radius: 50px;
-    padding-right: 30px;
-    padding-left: 10px;
-    height: 60px;
+    padding-right: 20px;
+    height: 50px;
 }
 .btnsize{
     width: 50px;
@@ -249,7 +248,6 @@ ul{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
-
 .more{
     padding: 10px;
 }
@@ -284,7 +282,18 @@ ul{
 }
 .popimg{
     grid-area: 1 / 1 / 2 / 2;
-
+}
+.poptext{
+    grid-area: 1 / 2 / 2 / 3;
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+}
+.imgpop{
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .poptext{
     grid-area: 1 / 2 / 2 / 3;
@@ -308,9 +317,6 @@ ul{
     gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.a-activ{
-
 }
 .activ{
     border-radius: 23px;
@@ -345,7 +351,7 @@ ul{
     .imgheb{
         height: 160px;
     }
-        .heb{
+    .heb{
             grid-template-rows: 4fr 3fr;
     }  
     .activ{
@@ -354,7 +360,6 @@ ul{
     .imgactiv{
         height: 200px;
     }
-    
 }    
 @media (max-width: 1178px) {
     .imgheb{
@@ -362,13 +367,10 @@ ul{
     }
     .heb{
         grid-template-rows: 4fr 3fr;
-}    }
-
+    }    
+}
 /*********** Adaptive *****************    tablet     1024px */
 @media (max-width: 1024px) {
-    .imgactiv{
-        height: 200px;
-    }
     .filters {
         flex-direction: column;
         align-items: flex-start;
@@ -380,12 +382,14 @@ ul{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
+    .imgpop{
+        height: 200px;
+    }
     .activ{
         grid-template-rows: 3fr 2fr;
     }
     .imgactiv{
         height: 190px;
-
     }
 }
 /*** Adaptive *** change navbar, search and filter buttons *** mobile mode *** 768px ***/
@@ -436,32 +440,23 @@ ul{
     .boxheb{
         background-color: #ffffff00;    
     }
-    .boxpop{
-        border-radius: 0px;
-    }
     .cardsheb{
         grid-template-rows: auto;
         grid-template-columns: 1fr;
     }
-
-  /*  .imgheb{
-        height: 200px;
-    }*/
-    .boxactiv {
-        gap: 2em;
-    }
-
-    .boxactiv{
-
-        grid-template-columns: 1fr;
-    }
-    .imgactiv{
-        height: 150px;
+    .boxpop{
+        border-radius: 0px;
     }
     .cardspop{
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
-
+    }
+    .boxactiv {
+        gap: 2em;
+        grid-template-columns: 1fr;
+    }
+    .imgactiv{
+        height: 150px;
     }
     .activites{
         padding: 40px;
@@ -470,12 +465,10 @@ ul{
         flex-direction: column;
         gap: 30px;
         margin: 0;
-
     }
 }
-/*********** Adaptive ***** small phone ****** remove all borders ****** 500px */
+/*********** Adaptive ***** small phone ****** remove all borders ****** 490px */
 @media (max-width: 490px) {
-
     .genralpad{
         padding: 10px;
     }
@@ -484,5 +477,14 @@ ul{
     }
     .recherbtnimg{
         right: 5px;
+    }
+    .activitespad{
+        padding: 10px;
+    }
+}
+/*********** Adaptive ****** 360px */
+@media (max-width: 360px) {
+    .part1{
+        flex-direction: column;
     }
 }
