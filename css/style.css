@@ -9,7 +9,6 @@
     max-width: 1440px;
     margin: auto;
 }
-
 .euro{
     font-weight: 800;
 }
@@ -36,7 +35,6 @@ a , a:visited{
     text-decoration: none;
     color: #242424;
     font-weight: 500;
-
 }
 a:hover   {
     color: #0065fc;
@@ -210,7 +208,6 @@ ul{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
 }
 /************** hebergement **************/
-
 .boxheb{
     flex-direction: column;
     gap: 30px;
@@ -237,17 +234,14 @@ ul{
     grid-template-rows: 3fr 2fr;
     justify-content: space-between;
 }
-
 .imgheb{
     grid-area: 1 / 1 / 2 / 2;
     height: 140px;
-
 }
 .textheb{
     padding: 10px;
     grid-area: 2 / 1 / 3 / 2;
     height: 100%;
-
 }
 .hebimg{
     height: 100%;
@@ -298,15 +292,12 @@ ul{
     padding: 10px;
     height: 100%;
 }
-
 .imgpop{
     border-radius: 20px 0px 0px 20px;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
-
 /****** activities ***********/
 .activites{
     padding: 40px 80px;
@@ -467,13 +458,6 @@ ul{
     .imgactiv{
         height: 150px;
     }
-
-
-
-
-
-
-
     .cardspop{
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -488,13 +472,6 @@ ul{
         margin: 0;
 
     }
-
-
-
-
-
-
-
 }
 /*********** Adaptive ***** small phone ****** remove all borders ****** 500px */
 @media (max-width: 490px) {
@@ -508,7 +485,4 @@ ul{
     .recherbtnimg{
         right: 5px;
     }
-
-
-    
 }
