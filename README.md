@@ -1,7 +1,7 @@
 # 🛏️ - 🏨 - BOOKI - 🏨 - 🛏️
 
 - [Site](https://confjuzen.github.io/booki/)
-- [Figma](https://confjuzen.github.io/booki/)
+- [Figma](https://www.figma.com/design/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki--desktop--mobile--tablette-?node-id=3-0&p=f&t=h0R4f8PlSTJAQkAG-0)
 - [Spécifications](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/DW_P2+HTML+CSS+Booki/DW+Booki+-+Note+de+synthese.pdf)
 - [Booki Starter Code](https://github.com/OpenClassrooms-Student-Center/booki-starter-code)
 ## 🇫🇷 - Ce projet est le premier projet de la formation OpenClassrooms – Développeur Web.
